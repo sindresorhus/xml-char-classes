@@ -1,6 +1,6 @@
 {
   "name": "xml-char-classes",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Regular expressions for matching against the XML Character Classes",
   "license": "MIT",
   "repository": "sindresorhus/xml-char-classes",
