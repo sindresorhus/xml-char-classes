@@ -35,11 +35,11 @@ function strToRe(str) {
 		set.addRange.apply(set, range);
 	});
 
-	return set.toRegExp();
+	return set.toString();
 }
 
 var ret = Object.keys(src).map(function (key) {
-	return 'exports.' + key + ' = ' + strToRe(src[key]) + ';';
+	return 'exports.' + key + ' = /' + strToRe(src[key]) + '/;';
 }).join('\n\n');
 
 fs.writeFileSync('index.js', ret);
