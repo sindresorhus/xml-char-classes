@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var xmlChars = require('./index');
+var xmlChars = require('./');
 
 it('should match valid XML Character Classes characters', function () {
 	assert(xmlChars.letter.test('unicorn'));
