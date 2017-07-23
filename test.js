@@ -1,9 +1,8 @@
-'use strict';
-var assert = require('assert');
-var xmlChars = require('./');
+import test from 'ava';
+import m from '.';
 
-it('should match valid XML Character Classes characters', function () {
-	assert(xmlChars.letter.test('unicorn'));
-	assert(xmlChars.digit.test('0'));
-	assert(!xmlChars.letter.test('#'));
+test('matches valid XML Character Classes characters', t => {
+	t.regex('unicorn', m.letter);
+	t.regex('0', m.digit);
+	t.notRegex('#', m.letter);
 });
