@@ -10,11 +10,11 @@
 		"url": "sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">=6"
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"prepublish": "node generate.js"
+		"prepublishOnly": "node generate.js"
 	},
 	"files": [
 		"index.js"
@@ -36,5 +36,10 @@
 		"ava": "*",
 		"regenerate": "^1.2.1",
 		"xo": "*"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/no-hex-escape": "off"
+		}
 	}
 }
