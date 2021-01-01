@@ -1,4 +1,4 @@
-# xml-char-classes [![Build Status](https://travis-ci.org/sindresorhus/xml-char-classes.svg?branch=master)](https://travis-ci.org/sindresorhus/xml-char-classes)
+# xml-char-classes
 
 > Regular expressions for matching against the [XML Character Classes](https://www.w3.org/TR/2006/REC-xml-20060816/#CharClasses)
 
