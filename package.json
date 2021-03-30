@@ -4,17 +4,18 @@
 	"description": "Regular expressions for matching against the XML Character Classes",
 	"license": "MIT",
 	"repository": "sindresorhus/xml-char-classes",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=6"
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"prepublishOnly": "node generate.js"
+		"prepare": "node generate.js"
 	},
 	"files": [
 		"index.js"
