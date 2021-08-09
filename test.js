@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import xmlCharacterClasses from './index.js';
 
 test('matches valid XML Character Classes characters', t => {
-	t.regex('unicorn', m.letter);
-	t.regex('0', m.digit);
-	t.notRegex('#', m.letter);
+	t.regex('unicorn', xmlCharacterClasses.letter);
+	t.regex('0', xmlCharacterClasses.digit);
+	t.notRegex('#', xmlCharacterClasses.letter);
 });

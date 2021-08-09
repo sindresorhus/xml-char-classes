@@ -10,8 +10,10 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=6"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava",
@@ -22,25 +24,25 @@
 	],
 	"keywords": [
 		"xml",
-		"re",
 		"regex",
 		"name",
 		"element",
 		"tag",
 		"match",
 		"unicode",
-		"char",
 		"character",
 		"classes"
 	],
 	"devDependencies": {
-		"ava": "*",
-		"regenerate": "^1.2.1",
-		"xo": "*"
+		"ava": "^3.15.0",
+		"regenerate": "^1.4.2",
+		"xo": "^0.44.0"
 	},
 	"xo": {
 		"rules": {
-			"unicorn/no-hex-escape": "off"
+			"unicorn/no-hex-escape": "off",
+			"unicorn/better-regex": "off",
+			"no-misleading-character-class": "off"
 		}
 	}
 }
